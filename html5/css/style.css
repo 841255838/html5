@@ -1,0 +1,130 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+figure{
+	position:relative;
+	color:white;
+	float:left;
+	overflow: hidden;
+	width:640px;
+	height:400px;
+}
+figure figcaption{
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+
+
+figure figcaption h2,p,img,div{
+	transition:all 1s;
+}
+
+/*====================================*/
+.move figcaption h2{
+	transform:translate(20px,200px);
+	
+}
+.move figcaption p{
+	transform:translate(20px,240px);
+}
+.move img{
+	opacity: 1;
+	height:450px;
+}
+.move:hover img{
+	opacity:0.5;
+	transform: translate(0px,-50px);
+}
+.move:hover figcaption h2{
+	transform:translate(20px,20px);
+}
+.move:hover figcaption p{
+	transform:translate(20px,40px);
+}
+
+
+/*==================================*/
+
+.move1 figcaption h2{
+	transform:translate(-320px,60px);
+}
+.move1 figcaption p{
+	transform:translate(-320px,160px);
+	color:black;
+	background: white;
+	margin-top:5px;
+}
+.move1:hover figcaption h2{
+	transform:translate(20px,60px) ;
+}
+.move1:hover figcaption p:nth-of-type(1){
+	transform: translate(20px,160px);
+	transition-delay:  0.5s;
+}
+.move1:hover figcaption p:nth-of-type(2){
+	transform: translate(20px,160px);
+	transition-delay:  1s;
+}
+.move1:hover figcaption p:nth-of-type(3){
+	transform: translate(20px,160px);
+	transition-delay: 1.5s;
+}
+
+
+/*=======================================*/
+
+.move2 figcaption h2{
+	transform:translate(20px,60px) ;
+}
+.move2 figcaption div{
+	transform:translate(0px,200px) ;
+	background:white ;
+	color: black;
+	width: 640px;
+	height:200px;
+	opacity: 0.5;
+}
+.move2:hover img{
+	transform:rotate(180deg);
+	opacity:0.5;
+}
+
+/*=========================================*/
+.move3 figcaption{
+	width:640px;
+	height:400px;
+}
+.move3 figcaption h2{
+	transform: translate(20px,60px);
+}
+.move3 figcaption div{
+	position:absolute;
+	bottom:-200px;
+	left:0;
+	width:120%;
+	height:200px;
+	background:white;
+	opacity:0.5 ;
+}
+.move3 figcaption p{
+	font-size:24px;
+	float:left;
+	margin-left:20px ;
+	transform: translate(450px,400px);
+}
+.move3:hover figcaption p:nth-of-type(1){
+	transform:translate(450px,280px) ;
+}
+.move3:hover figcaption p:nth-of-type(2){
+	transform:translate(450px,280px) ;
+}
+.move3:hover figcaption div{
+	transform: rotate(-15deg);
+	transform-origin:0 0;
+}
+
+
+/*=======================================*/
